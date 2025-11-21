@@ -7,7 +7,7 @@ export default function Settings() {
   const [activeSection, setActiveSection] = useState('Profile')
   const [formData, setFormData] = useState({
     title: '',
-    firstName: 'Ajay',
+    firstName: 'User',
     lastName: 'Kumar',
     email: 'luckyjay159@gmail.com',
     dateOfBirth: '',

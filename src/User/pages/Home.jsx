@@ -1,8 +1,10 @@
 import { Activity, Rocket, Share2 } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import { useTheme } from '../../context/ThemeContext'
 
 export default function Home() {
   const navigate = useNavigate()
+  const { theme } = useTheme()
 
   return (
     <div className="-mx-6 flex min-h-[calc(100vh-180px)] w-full max-w-full flex-col gap-6 overflow-x-hidden px-6 pl-10 pt-6 pb-12 text-slate-900 bg-white dark:bg-slate-950 dark:text-slate-100 sm:-mx-10 sm:px-10 sm:pl-14 sm:pt-8">
@@ -11,15 +13,15 @@ export default function Home() {
         <div className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-800 text-2xl font-semibold text-white dark:bg-slate-700">
           A
         </div>
-        <h1 className="text-3xl font-semibold text-slate-900 dark:text-white">Hey, Ajay</h1>
+        <h1 className="text-3xl font-semibold text-slate-900 dark:text-white">Hey, User</h1>
       </div>
 
       {/* ================= TRADER SUMMARY ================= */}
       <section className="flex flex-wrap items-center gap-3 md:gap-4 rounded-xl border border-slate-200 bg-white px-4 md:px-6 py-3 md:py-4 shadow-sm dark:border-slate-700 dark:bg-slate-900">
         <img
-          src="/fp-light-brand.webp"
+          src={theme === 'dark' ? '/logo-dark.png' : '/logo.png'}
           alt="FundingPips"
-          className="h-6 md:h-8 w-auto object-contain dark:brightness-0 dark:invert"
+          className="h-6 md:h-8 w-auto object-contain"
           draggable="false"
         />
         <span className="hidden sm:block h-8 w-px bg-slate-300 dark:bg-slate-600" />

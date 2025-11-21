@@ -3,11 +3,13 @@ import { Outlet, useLocation } from 'react-router-dom'
 import { PanelRightOpen } from 'lucide-react'
 import Sidebar from './components/Sidebar'
 import { userNavItems } from './navItems'
+import { useTheme } from '../context/ThemeContext'
 
 export default function UserLayout() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [isLargeScreen, setIsLargeScreen] = useState(false)
   const location = useLocation()
+  const { theme } = useTheme()
 
   useEffect(() => {
     const checkScreenSize = () => {
@@ -74,9 +76,9 @@ export default function UserLayout() {
           <div className="bg-white px-6 py-4 dark:bg-slate-950 sm:px-10">
             <div className="flex items-center gap-4">
               <img
-                src="/fp-light-brand.webp"
-                alt="FundingPips"
-                className="h-8 w-auto object-contain dark:brightness-0 dark:invert"
+                src={theme === 'dark' ? '/logo-dark.png' : '/logo.png'}
+                alt="OXO"
+                className="h-8 w-auto object-contain"
                 draggable="false"
               />
               <span className="h-8 w-px bg-slate-300 dark:bg-slate-600" />

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Users, Tag } from 'lucide-react'
+import { useTheme } from '../../context/ThemeContext'
 
 // Competition card component
 function CompetitionCard({ competition, countdown, onViewClick }) {
@@ -77,6 +78,7 @@ function CompetitionCard({ competition, countdown, onViewClick }) {
 
 export default function Competition() {
   const navigate = useNavigate()
+  const { theme } = useTheme()
   const [countdown, setCountdown] = useState({
     days: 9,
     hours: 8,
@@ -178,16 +180,16 @@ export default function Competition() {
       {/* ================= HEADER ================= */}
       <div className="flex flex-wrap items-center gap-4">
         <img
-          src="/fp-light-brand.webp"
-          alt="FundingPips"
-          className="h-8 w-auto object-contain dark:brightness-0 dark:invert"
+          src={theme === 'dark' ? '/logo-dark.png' : '/logo.png'}
+          alt="OXO"
+          className="h-8 w-auto object-contain"
           draggable="false"
         />
         <span className="h-8 w-px bg-slate-300 dark:bg-slate-600" />
         <div className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-100 text-2xl font-semibold text-slate-700 dark:bg-white/10 dark:text-white">
           A
         </div>
-        <h1 className="text-3xl font-semibold text-slate-900 dark:text-white">Hey, Ajay</h1>
+        <h1 className="text-3xl font-semibold text-slate-900 dark:text-white">Hey, User</h1>
       </div>
 
       {/* ================= MONTHLY COMPETITION CARD ================= */}

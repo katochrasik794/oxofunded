@@ -11,7 +11,7 @@ export default function NewChallenge() {
   const [couponCode, setCouponCode] = useState('')
   const [agreeTerms, setAgreeTerms] = useState(false)
   const [billingData, setBillingData] = useState({
-    firstName: 'Ajay',
+    firstName: 'User',
     lastName: 'Kumar',
     country: '',
     billingAddress: '123, Billing Street',

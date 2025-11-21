@@ -13,7 +13,7 @@ export default function Accounts() {
           <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full bg-slate-200 text-lg md:text-xl font-semibold text-white dark:bg-slate-200 dark:text-white">
             A
           </div>
-          <span className="text-base md:text-lg font-semibold text-slate-900 dark:text-slate-100">Hey, Ajay</span>
+          <span className="text-base md:text-lg font-semibold text-slate-900 dark:text-slate-100">Hey, User</span>
         </div>
 
         {/* BUY CHALLENGE Button */}

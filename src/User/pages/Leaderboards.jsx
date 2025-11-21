@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { Trophy, Calendar, Coins, Shield, Leaf, Check } from 'lucide-react'
+import { useTheme } from '../../context/ThemeContext'
 
 export default function Leaderboards() {
   const [accountSize, setAccountSize] = useState('10k')
+  const { theme } = useTheme()
 
   const summaryCards = [
     {
@@ -147,9 +149,9 @@ export default function Leaderboards() {
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-4">
           <img
-            src="/fp-light-brand.webp"
-            alt="FundingPips"
-            className="h-8 w-auto object-contain dark:brightness-0 dark:invert"
+            src={theme === 'dark' ? '/logo-dark.png' : '/logo.png'}
+            alt="OXO"
+            className="h-8 w-auto object-contain"
             draggable="false"
           />
           <span className="h-8 w-px bg-slate-300 dark:bg-slate-600" />
@@ -157,7 +159,7 @@ export default function Leaderboards() {
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-100 text-xl font-semibold text-slate-700 dark:bg-white/10 dark:text-white">
               A
             </div>
-            <p className="text-xl font-semibold text-slate-900 dark:text-white">Hey, Ajay</p>
+            <p className="text-xl font-semibold text-slate-900 dark:text-white">Hey, User</p>
           </div>
         </div>
 

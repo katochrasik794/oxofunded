@@ -7,7 +7,7 @@ export default function Accounts() {
       <div className="w-1/4 p-6 border-r bg-white">
         <div className="flex items-center mb-6">
           <div className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-lg font-bold mr-3">A</div>
-          <span className="text-xl font-semibold">Hey, Ajay</span>
+          <span className="text-xl font-semibold">Hey, User</span>
         </div>
         <button className="w-full bg-blue-600 text-white py-2 rounded mb-6 font-medium">🚀 BUY CHALLENGE</button>
         <div className="flex gap-2 mb-6">
