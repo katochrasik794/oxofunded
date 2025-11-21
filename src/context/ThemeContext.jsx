@@ -5,7 +5,7 @@ const ThemeContext = createContext({
   toggleTheme: () => {},
 })
 
-const THEME_KEY = 'fundingpips:theme'
+const THEME_KEY = 'OxoFunded:theme'
 
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(() => {

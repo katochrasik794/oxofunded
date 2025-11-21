@@ -115,7 +115,7 @@ export default function Competition() {
     return () => clearInterval(interval)
   }, [])
 
-  const [activeTab, setActiveTab] = useState('Fundingpips')
+  const [activeTab, setActiveTab] = useState('OxoFunded')
 
   // Competition data
   const competitions = [
@@ -123,55 +123,55 @@ export default function Competition() {
       title: 'November 2025 Monthly Competition',
       status: 'Ongoing',
       participants: 50000,
-      platforms: ['FundingPips', 'matchtrader'],
+      platforms: ['OxoFunded', 'matchtrader'],
     },
     {
       title: 'October 2025 Monthly Competition',
       status: 'Ended',
       participants: 50000,
-      platforms: ['FundingPips', 'matchtrader'],
+      platforms: ['OxoFunded', 'matchtrader'],
     },
     {
       title: 'September 2025 Monthly Competition',
       status: 'Ended',
       participants: 50000,
-      platforms: ['FundingPips', 'matchtrader'],
+      platforms: ['OxoFunded', 'matchtrader'],
     },
     {
       title: 'August 2025 Monthly Competition',
       status: 'Ended',
       participants: 50000,
-      platforms: ['FundingPips', 'matchtrader'],
+      platforms: ['OxoFunded', 'matchtrader'],
     },
     {
       title: 'July 2025 Monthly Competition',
       status: 'Ended',
       participants: 50000,
-      platforms: ['FundingPips', 'matchtrader'],
+      platforms: ['OxoFunded', 'matchtrader'],
     },
     {
       title: 'June 2025 Monthly Competition',
       status: 'Ended',
       participants: 46073,
-      platforms: ['FundingPips', 'matchtrader'],
+      platforms: ['OxoFunded', 'matchtrader'],
     },
     {
       title: 'May 2025 Monthly Competition',
       status: 'Ended',
       participants: 48520,
-      platforms: ['FundingPips', 'matchtrader'],
+      platforms: ['OxoFunded', 'matchtrader'],
     },
     {
       title: 'April 2025 Monthly Competition',
       status: 'Ended',
       participants: 49674,
-      platforms: ['FundingPips', 'matchtrader'],
+      platforms: ['OxoFunded', 'matchtrader'],
     },
     {
       title: 'March 2025 Monthly Competition',
       status: 'Ended',
       participants: 43772,
-      platforms: ['FundingPips', 'matchtrader'],
+      platforms: ['OxoFunded', 'matchtrader'],
     },
   ]
 
@@ -284,7 +284,7 @@ export default function Competition() {
 
       {/* ================= BOTTOM NAVIGATION TABS ================= */}
       <nav className="flex items-center justify-center gap-8 border-t border-slate-200 pt-6 dark:border-white/10">
-        {['Joined', 'Fundingpips', 'Championships', 'Hosted'].map((tab) => (
+        {['Joined', 'OxoFunded', 'Championships', 'Hosted'].map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}

@@ -69,7 +69,7 @@ export default function AdminLayout() {
           <div className="flex items-center gap-4">
             <img
               src={theme === 'dark' ? '/logo-dark.png' : '/logo.png'}
-              alt="FundingPips"
+              alt="OxoFunded"
               className="h-8 w-auto object-contain"
               draggable="false"
             />

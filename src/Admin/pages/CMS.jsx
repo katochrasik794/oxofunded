@@ -14,8 +14,8 @@ export default function CMS() {
   ]
 
   const sampleContent = {
-    Homepage: 'Welcome to FundingPips - Your gateway to funded trading accounts...',
-    About: 'FundingPips is a leading prop trading firm...',
+    Homepage: 'Welcome to OxoFunded - Your gateway to funded trading accounts...',
+    About: 'OxoFunded is a leading prop trading firm...',
     Rules: 'Trading Rules and Guidelines...',
     FAQs: 'Frequently Asked Questions...',
     Terms: 'Terms and Conditions of Service...',
